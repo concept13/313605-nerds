@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+      <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="index.html">
+                <img src="img/logo-nerds.png" alt="ГЛАВНАЯ">
+              </a>
+            </li>
+            <li>
+              <a href="#">СТУДИЯ</a>
+            </li>
+            <li>
+              <a href="#">КЛИЕНТЫ</a>
+            </li>
+            <li>
+              <a href="catalog.html">МАГАЗИН</a>
+            </li>
+            <li>
+              <a href="#">КОНТАКТЫ</a>
+            </li>
+            <li>
+              <a href="#">КОРЗИНА</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="main-header">Магазин готовых шаблонов</h1>
+      </div>
+    </header>
+    <main class="catalog">
+      <div class="container">
+        <div class="filter-content-left">
+          <form class="filter-form" name="filter" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="cost">
+            <p><b>СТОИМОСТЬ:</b></p>
+            <!--<input type="range" min="1000" max="15000" value="6000" step="3000" id="cost" list=costsettings>
+            <datalist id=costsettings>
+            <option>3000</option>
+            <option>6000</option>
+            <option>9000</option>
+            <option>12000</option>
+            <option>15000</option>
+            </datalist>
+            <p>от</p>
+            <input type="text" name="cost" id="min-cost" value="1000" size="5">
+            <p>до</p>
+            <input type="text" name="cost" id="max-cost" value="15000" size="5">-->
+          </div>
+          <div class="grid-type">
+          <p><b>СЕТКА:</b></p>
+            <div class="adaptive">
+              <input type="radio" name="grid" id="grid-adaptive" value="adaptive" checked>
+              <label for="grid-adaptive">Адаптивная</label>
+            </div>
+            <div class="fixed">
+              <input type="radio" name="grid" id="grid-fixed" value="fixed">
+              <label for="grid-fixed">Фиксированная</label>
+            </div>
+            <div class="rubber">
+              <input type="radio" name="grid" id="grid-rubber" value="rubber">
+              <label for="grid-rubber">Резиновая</label>
+            </div>
+          </div>
+          <div class="feature">
+            <p><b>ОСОБЕННОСТИ:</b></p>
+              <div class="slider">
+                <input type="checkbox" name="feature" id="feature-slider" value="slider">
+                <label for="feature-slider">Слайдер</label>
+              </div>
+              <div class="block+">
+                <input type="checkbox" name="feature" id="feature-block+" value="block+">
+                <label for="feature-block+">Блок преимуществ</label>
+              </div>
+              <div class="news">
+                <input type="checkbox" name="feature" id="feature-news" value="news">
+                <label for="feature-news">Новости</label>
+              </div>
+              <div class="gallery">
+                <input type="checkbox" name="feature" id="feature-gallery" value="gallery">
+                <label for="feature-gallery">Галерея</label>
+              </div>
+              <div class="basket">
+                <input type="checkbox" name="feature" id="feature-basket" value="basket">
+                <label for="feature-basket">Корзина</label>
+              </div>
+              <div class="button">
+                <button type="submit">показать</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      <div class="filter-content-right">
+        <div class="sorting">
+          <p><b>СОРТИРОВАТЬ:</b></p>
+            <ul>
+              <li>
+                <a href="#">по цене</a>
+              </li>
+              <li>
+                <a href="#">по типу</a>
+              </li>
+              <li>
+                <a href="#">по названию</a>
+              </li>
+              <li>
+                <a href="#"><img src="img/sort-down.png" alt="вниз"></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/sort-up.png" alt="вверх"></a>
+              </li>
+            </ul>
+          </div>
+          <section class="finished-projects">
+           <div class="view">
+             <div>
+               <img src="img/browser.jpg" alt="browser">
+               <img src="img/img-sedona.jpg" alt="project SEDONA">
+                 <div class="mask">
+                   <img src="img/browser-activ.png" alt="browser-activ">
+                   <img src="img/sedona-hover.jpg" alt="sedona-hover">
+                   <a href="#" class="buy">9 900 руб.</a> <!--ИЛИ МОЖЕТ БЫТЬ: <button type="submit">9 900 руб.</button>-->
+                 </div>
+             </div>
+             <div>
+               <img src="img/browser.jpg" alt="browser">
+               <img src="img/img-pink.jpg" alt="project PINK">
+                 <div class="mask">
+                   <img src="img/browser-activ.png" alt="browser-activ">
+                   <img src="img/pink-hover.jpg" alt="pink-hover">
+                   <a href="#" class="buy">9 900 руб.</a> <!--ИЛИ МОЖЕТ БЫТЬ: <button type="submit">9 900 руб.</button>-->
+                 </div>
+              </div>
+              <div>
+                <img src="img/browser.jpg" alt="browser">
+                <img src="img/img-barbershop.jpg" alt="project BARBERSHOP">
+                  <div class="mask">
+                    <img src="img/browser-activ.png" alt="browser-activ">
+                    <img src="img/barbershop-hover.jpg" alt="barbershop-hover">
+                    <a href="#" class="buy">9 900 руб.</a> <!--ИЛИ МОЖЕТ БЫТЬ: <button type="submit">9 900 руб.</button>-->
+                  </div>
+               </div>
+               <div>
+                 <img src="img/browser.jpg" alt="browser">
+                 <img src="img/img-mishka.jpg" alt="project MISHKA">
+                   <div class="mask">
+                     <img src="img/browser-activ.png" alt="browser-activ">
+                     <img src="img/mishka-hover.jpg" alt="mishka-hover">
+                     <a href="#" class="buy">9 900 руб.</a> <!--ИЛИ МОЖЕТ БЫТЬ: <button type="submit">9 900 руб.</button>-->
+                   </div>
+                </div>
+                <div>
+                  <img src="img/browser.jpg" alt="browser">
+                  <img src="img/img-aplus.jpg" alt="project APLUS">
+                    <div class="mask">
+                      <img src="img/browser-activ.png" alt="browser-activ">
+                      <img src="img/aplus-hover.jpg" alt="aplus-hover">
+                      <a href="#" class="buy">9 900 руб.</a> <!--ИЛИ МОЖЕТ БЫТЬ: <button type="submit">9 900 руб.</button>-->
+                    </div>
+                 </div>
+                 <div>
+                   <img src="img/browser.jpg" alt="browser">
+                   <img src="img/img-kvast.jpg" alt="project KVAST">
+                     <div class="mask">
+                       <img src="img/browser-activ.png" alt="browser-activ">
+                       <img src="img/kvast-hover.jpg" alt="kvast-hover">
+                       <a href="#" class="buy">9 900 руб.</a> <!--ИЛИ МОЖЕТ БЫТЬ: <button type="submit">9 900 руб.</button>-->
+                     </div>
+                  </div>
+                </div>
+                <div class="pages-section-content">
+                  <input type="button" name="btn-pages" value="1">
+                  <input type="button" name="btn-pages" value="2">
+                  <input type="button" name="btn-pages" value="3">
+                  <input type="button" name="btn-pages" value="следующая">
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+        <div class="useblock">
+          <div class="usemap"><!--ЭТОТ БЛОК МОЖНО СДЕЛАТЬ АКТИВНЫМ ПРИ ПОМОЩИ СОЗДАНИЯ ССЫЛОК НА ЯНДЕКС КАРТЫ-->
+            <img src="img/map-marker.jpg" alt="карта">
+            <!--<img src="http://placehold.it/100x100" alt="всплывающий указатель NЁRDS">-->
+          </div>
+          <div class="main-contacts">
+            <h3 class="main-contacts-title">NЁRDS DESIGNE STUDIO</h3>
+            <p>191186, Санкт-Петербург,<br>
+            Б. Конюшенная, д. 19/8</p>
+            <p>Тел. +7 (812) 275-75-75</p>
+          </div>
+          <div>
+            <a href="#">Напишите нам</a>
+          </div>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="feedback-form-title">Напишите нам</p>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <label for="user-field-id">Ваше имя:</label>
+                    </td>
+                    <td>
+                      <label for="user-email-id">Ваш e-mail:</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" name="username" id="user-field-id" value="Представьтесь пожалуйста*">
+                    </td>
+                    <td>
+                      <input type="email" name="user-email" id="user-email-id" value="Для отправки ответа*">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div>
+                <table>
+                  <tr>
+                    <td>
+                      <label for="user-comment-id">Текст письма:</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <textarea id="user-comment-id" name="user-comment" cols="100" rows="5">В свободной форме*</textarea>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div>
+                <button type="submit">отправить</button>
+              </div>
+            </form>
+          </div>
+          <footer class="main-footer">
+            <div class="container">
+              <div class="footer-social-left">
+                <a class="social-btn social-btn-vk" href="#">
+                  <img src="img/vk-icon.png" alt="Вконтакте">
+                </a>
+                <a class="social-btn social-btn-fb" href="#">
+                  <img src="img/fb-icon.png" alt="Фейсбук">
+                </a>
+                <a class="social-btn social-btn-inst" href="#">
+                  <img src="img/insta-icon.png" alt="Инстаграм">
+                </a>
+              </div>
+              <div class="footer-tegline">
+                <p class="footer-tegline">Давайте дружить, это выгодно!</p>
+                <p>Скидка 10% для друзей из социальных сетей</p>
+              </div>
+            </div>
+          </footer>
+        </body>
+      </html>
