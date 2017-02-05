@@ -30,3 +30,10 @@ h2 {
   line-height: 1.5;
   color: #283136;
 }
+.semi{
+  opacity: 0.12
+}
+
+.mask{
+  opacity: 0
+}
