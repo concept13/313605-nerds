@@ -7,14 +7,12 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
+        <div class="index-logo">
+          <a><img src="img/logo-nerds.png" alt="главная"></a>
+        </div>
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="index.html">
-                <img src="img/logo-nerds.png" alt="ГЛАВНАЯ">
-              </a>
-            </li>
             <li>
               <a class="navi" href="#">студия</a>
             </li>
@@ -27,15 +25,23 @@
             <li>
               <a class="navi" href="#">контакты</a>
             </li>
-            <li>
-              <a><img src="img/bask-icon.png" alt="корзина"></a>
-              <a class="navi" href="#">корзина</a>
-            </li>
           </ul>
         </nav>
-        <h1 class="main-header">Магазин готовых шаблонов</h1>
+        <div class="user-bask">
+          <ul>
+            <li>
+              <a class="icon-bask"><img src="img/bask-icon.png" alt="корзина"></a>
+            </li>
+            <li>
+              <a class="bask" href="#">корзина</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
+      <div class="content-title">
+        <h1 class="main-header">Магазин готовых шаблонов</h1>
+      </div>
     <main class="catalog">
       <div class="container">
         <div class="filter-content-left">
@@ -186,56 +192,51 @@
             </div>
           </div>
         </main>
-        <div class="useblock">
-          <div class="usemap">
-            <img src="img/map-marker.jpg" alt="карта">
-          </div>
-          <div class="main-contacts">
-            <h3 class="main-contacts-title">NЁRDS DESIGNE STUDIO</h3>
-            <p>191186, Санкт-Петербург,<br>
-            Б. Конюшенная, д. 19/8</p>
-            <p>Тел. +7 (812) 275-75-75</p>
-          </div>
-          <div>
-            <a href="#">Напишите нам</a>
-          </div>
-            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="feedback-form-title">Напишите нам</p>
-              <div class="box-1">
-                <label for="user-field-id">Ваше имя:</label>
-                <input type="text" name="username" id="user-field-id" value="Представьтесь пожалуйста*">
-              </div>
-              <div class="box-2">
-                <label for="user-email-id">Ваш e-mail:</label>
-                <input type="email" name="user-email" id="user-email-id" value="Для отправки ответа*">
-              </div>
-              <div class="box-3">
-                <label for="user-comment-id">Текст письма:</label>
-                  <textarea id="user-comment-id" name="user-comment" cols="100" rows="5">В свободной форме*</textarea>
-              </div>
-              <div class="btn-send">
-                <button type="submit">отправить</button>
-              </div>
-            </form>
-          </div>
-          <footer class="main-footer">
-            <div class="container">
-              <div class="footer-social-left">
-                <a class="social-btn social-btn-vk" href="#">
-                  <img src="img/vk-icon.png" alt="Вконтакте">
-                </a>
-                <a class="social-btn social-btn-fb" href="#">
-                  <img src="img/fb-icon.png" alt="Фейсбук">
-                </a>
-                <a class="social-btn social-btn-inst" href="#">
-                  <img src="img/insta-icon.png" alt="Инстаграм">
-                </a>
-              </div>
-              <div class="footer-tegline">
-                <p class="footer-tegline">Давайте дружить, это выгодно!</p>
-                <p>Скидка 10% для друзей из социальных сетей</p>
+        <section class="main-useblock">
+          <div class="container">
+            <div class="main-contacts">
+              <h3 class="main-contacts-title">NЁRDS DESIGNE STUDIO</h3>
+              <p>191186, Санкт-Петербург,<br>
+              Б. Конюшенная, д. 19/8</p>
+              <p>Тел. +7 (812) 275-75-75</p>
+                <div class="btn-form">
+                  <a href="#">Напишите нам</a>
+                </div>
               </div>
             </div>
-          </footer>
-        </body>
-      </html>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="feedback-form-title">Напишите нам</p>
+                <div class="box-1">
+                  <label for="user-field-id">Ваше имя:</label>
+                  <input type="text" name="username" id="user-field-id" value="Представьтесь пожалуйста*">
+                </div>
+                <div class="box-2">
+                  <label for="user-email-id">Ваш e-mail:</label>
+                  <input type="email" name="user-email" id="user-email-id" value="Для отправки ответа*">
+                </div>
+                <div class="box-3">
+                  <label for="user-comment-id">Текст письма:</label>
+                  <textarea id="user-comment-id" name="user-comment" cols="100" rows="5">В свободной форме*</textarea>
+                </div>
+                <div class="btn-send">
+                  <button type="submit">отправить</button>
+                </div>
+              </form>
+            </section>
+            <footer class="main-footer">
+              <div class="container clearfix">
+                <div class="footer-content-left">
+                  <ul>
+                    <li><a class="social-btn-vk" href="#"></a></li>
+                    <li><a class="social-btn-fb" href="#"></a></li>
+                    <li><a class="social-btn-insta" href="#"><a></li>
+                  </ul>
+                </div>
+                <div class="footer-content-right">
+                  <p class="footer-tegline-title">Давайте дружить, это выгодно!</p>
+                  <p class="footer-tegline-action">Скидка 10% для друзей из социальных сетей</p>
+               </div>
+             </div>
+           </footer>
+         </body>
+       </html>
