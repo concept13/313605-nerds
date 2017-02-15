@@ -13,20 +13,21 @@ body {
   background:#ffffff;
 }
 
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 .main-header {
+  width: 1160px;
+  min-height: 115px;
   background:#eeeeee;
 }
 
-.clearfix ::after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
-
-.main-header .container {
-  max-width: 1160px;
-  min-height: 115px;
-  margin: 0;
 }
 
 .index-logo {
@@ -83,19 +84,11 @@ body {
   line-height: 1.875;
 }
 
-.main-header .container: last-child {
-  margin-right: 0px;
-}
-
 .main-slider {
-  background:#eeeeee;
-}
-
-.main-slider .container {
-  max-width: 1160px;
+  width: 1160px;
   min-height: 430px;
-  margin: 0;
   margin-bottom: 80px;
+  background:#eeeeee;
 }
 
 .slider {
@@ -183,12 +176,6 @@ body {
   border-radius: 3px;
 }
 
-/*.slide .slide-image {
-  position: absolute;
-  width: 630px;
-  min-height: 440px;
-  margin-left: 430px;*/
-}
 .slide:nth-child(1) {
   background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
@@ -220,11 +207,7 @@ body {
 }
 
 .main-services-content {
-
-}
-
-.main-services-content .container {
-  min-width: 1160px;
+  width: 1160px;
   min-height: 430px;
   margin-bottom: 78px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
@@ -236,7 +219,7 @@ body {
   margin-right: 100px;
 }
 
-.main-services-content .container: last-child {
+.main-services:last-child {
   margin-right: 0px;
 }
 
@@ -305,11 +288,7 @@ body {
 }
 
 .main-index-content {
-
-}
-
-.main-index-content .container {
-  min-width: 1160px;
+  width: 1160px;
   min-height: 530px;
 }
 
@@ -363,14 +342,10 @@ body {
   line-height: 0.224;
 }
 
-.main-partners-block{
-
-}
-
-.main-partners-block .container {
-  min-width: 1160px;
+.main-partners-block {
+  width: 1160px;
   min-height: 185px;
-  margin-bottom: 85px;
+  margin-bottom: 83px;
   border-top: 2px solid rgba(0, 0, 0, 0.2);
   border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 }
@@ -378,22 +353,17 @@ body {
 .main-partners-block a {
   float: left;
   width: 260px;
-  min-height: 183px;
+  min-height: 185px;
   margin-right: 40px;
-  padding: 48px 0;
 }
 
-.main-partners-block .container: last-child {
+.main-partners-block a:last-child {
   margin-right: 0px;
 }
 
-.main-useblock{
-
-}
-
-.main-useblock .container {
-  min-width: 1160px;
-  height: 420px;
+.main-useblock {
+  width: 1160px;
+  min-height: 420px;
   background-image: url('../img/map-marker.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -447,16 +417,12 @@ body {
   border-radius: 3px;
 }
 
-form {
+.feedback-form {
   display: none;
 }
 
 .main-footer {
-
-}
-
-.main-footer .container {
-  max-width: 1160px;
+  width: 1160px;
   min-height: 220px;
   margin-top: 70px;
 }
@@ -476,7 +442,7 @@ form {
   margin-bottom: 75px;
 }
 
-.main-footer .container: last-child {
+.main-footer:last-child {
   margin-right: 0;
 }
 
@@ -550,6 +516,104 @@ form {
   text-align: left;
   line-height: 1.375;
 }
+
+.main-content-title {
+  width: 1160px;
+  min-height: 240px;
+  margin: 0;
+  margin-bottom: 55px;
+  background:#eeeeee;
+}
+
+.main-content-title h1{
+  float:left;
+  position: absolute;
+  width:1160px;
+  height:240px;
+  font-size: 45px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto Medium", monospace;
+  color: #000000;
+  text-transform: none;
+  text-align: center;
+  line-height: 1.0;
+}
+
+/*.range-filter {
+  width: 260px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 145px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}*/
+
 
 .semi{
   opacity: 0.12
