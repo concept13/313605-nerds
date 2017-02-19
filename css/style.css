@@ -19,29 +19,26 @@ body {
   padding: 0 20px;
 }
 
-.main-header {
-  /*min-height: 115px;*/
-  padding-top: 48px;
-  background:#eeeeee;
-}
-
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
+.main-header {
+  padding-top: 48px;
+  background:#eeeeee;
+}
+
 .index-logo {
   float: left;
   width: 160px;
-  /*min-height: 115px;*/
   margin-right: 200px;
 }
 
 .main-navigation {
   float: left;
   width: 540px;
-  /*min-height: 115px;*/
   margin-right: 100px;
 }
 
@@ -62,7 +59,6 @@ body {
 }
 
 .user-bask {
-  display: inline-block;
   float: left;
   width: 160px;
   text-align: center;
@@ -78,8 +74,11 @@ body {
   line-height: 30px;
 }
 
+.main-header:last-child {
+  margin-right: 0px;
+}
+
 .main-slider {
-  /*width: 1160px;*/
   height: 430px;
   background: #eeeeee;
 }
@@ -314,15 +313,6 @@ body {
   line-height: 45px;
 }
 
-.index-content-text {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Roboto regular", "Arial", sans-serif;
-  color: #283136;
-  text-transform: none;
-  line-height: 24px;
-}
-
 .span {
   font-size: 16px;
   font-weight: bold;
@@ -332,19 +322,24 @@ body {
   line-height: 24px;
 }
 
-
-/*.index-content-text li {
+.index-content-left li {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto regular", "Arial", sans-serif;
+  color: #283136;
+  text-transform: none;
+  line-height: 50px;
   list-style-type: none;
 }
-.index-content-text li:before {
+
+.index-content-left li:before {
   content: "\2014";
   font-weight: bold;
   color: #fb565a;
-}*/
+  padding-right: 15px;
+}
 
-
-.main-stat .statistics {
-  display: inline-block;
+.main-stat .statistics span {
   text-align: center;
   font-size: 45px;
   font-weight: bold;
@@ -354,19 +349,28 @@ body {
   line-height: 45px;
 }
 
-.main-stat .text {
+.main-stat .statistics sup {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Roboto bold", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-stat .statistics {
   display: inline-block;
-  text-align: center;
+  width: 100px;
+  margin-right: 15px;
+  text-align: left;
   font-size: 16px;
   font-weight: 400;
   font-family: "Roboto Regular", "Arial", sans-serif;
   color: #283136;
-  text-transform: uppercase;
+  text-transform: none;
   line-height: 18px;
 }
 
 .main-partners-block {
-  /*min-height: 180px;*/
   margin-bottom: 80px;
   font-size: 0;
 }
@@ -404,7 +408,6 @@ body {
   width: 320px;
   height: 310px;
   margin-top: 55px;
-  margin-bottom: 55px;
   margin-left: 0px;
   background: #ffffff;
 }
@@ -437,7 +440,6 @@ body {
   width: 220px;
   padding: 15px 0;
   margin-left: 50px;
-  margin-top: 40px;
   font-size: 16px;
   color: #ffffff;
   text-transform: uppercase;
@@ -451,32 +453,28 @@ body {
   display: none;
 }
 
-.main-footer {
-  padding-top: 70px;
-}
-
 .footer-content-left {
   float: left;
   width: 320px;
-  min-height: 78px;
-  /*margin-left: -38px;*/
+  padding: 70px 0;
   margin-right: 80px;
 }
 
 .footer-content-right {
   float: left;
   width: 600;
-  min-height: 78px;
-  margin-bottom: 75px;
+  padding-top: px;
+  padding-bottom: 77px;
 }
 
 .main-footer:last-child {
   margin-right: 0;
 }
 
-.footer-content-left li {
+.footer-content-left a {
   display: inline-block;
   width: 78px;
+  text-align: left;
   margin-right: 12px;
 }
 
@@ -525,47 +523,55 @@ body {
 .footer-tegline-title {
   font-size: 36px;
   font-weight: bold;
-  font-style: normal;
-  font-family: "Roboto bold", sans-serif;
+  font-family: "Roboto bold", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
   text-align: left;
-  line-height: 1;
+  line-height: 36px;
 }
 
 .footer-tegline-action {
   font-size: 16px;
   font-weight: bold;
-  font-style: normal;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto Regular", "Arial" sans-serif;
   color: #444444;
   text-transform: none;
   text-align: left;
-  line-height: 1.375;
+  line-height: 18px;
+}
+
+.social-btn-vk:hover,
+.social-btn-fb:hover,
+.social-btn-insta:hover {
+  background-color: #e74246;
+}
+
+.social-btn-vk:active,
+.social-btn-fb:active,
+.social-btn-insta:active {
+  background-color: #d7373b;
+  box-shadow: #000101;
 }
 
 .main-content-title {
-  min-height: 240px;
+  height: 240px;
+  padding-top: 85px;
   background:#eeeeee;
 }
 
 .main-content-title h1{
-  float:left;
-  width:1160px;
   font-size: 55px;
   font-weight: 500;
-  font-style: normal;
-  font-family: "Roboto Medium", monospace;
+  font-family: "Roboto Medium", "Arial", sans-serif;
   color: #000000;
   text-transform: none;
   text-align: center;
-  line-height: 1.0;
+  line-height: 55px;
 }
 
 .filter-content-left {
   float: left;
   width: 260px;
-  min-height: 2228px;
   margin-right: 140px;
   padding-top: 60px;
 }
@@ -573,7 +579,6 @@ body {
 .filter-content-right {
   float: right;
   width: 760px;
-  min-height: 2228px;
   padding-top: 60px;
 }
 
@@ -670,6 +675,7 @@ body {
   padding: 16px 0;
   margin-top: 48px;
   font-size: 16px;
+
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -703,7 +709,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 1.286;
+  line-height: 18px;
 }
 
 .view-left {
@@ -726,6 +732,18 @@ body {
   width: 360px;
 }
 
+.semi{
+  opacity: 0.12
+}
+
+.view-left:hover .semi {
+  opacity: 1;
+}
+
+.view-right:hover .semi {
+  opacity: 1;
+}
+
  .mask {
   position: absolute;
   bottom: 0;
@@ -737,6 +755,7 @@ body {
 
 .view-left:hover .mask {
   display: block;
+
 }
 
 .view-right:hover .mask {
@@ -762,7 +781,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto Regular", "Arial", sans-serif;
   text-align: center;
   color: #666666;
   text-transform: none;
@@ -778,7 +797,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto Medium";
+  font-family: "Roboto Medium", "Arial", sans-serif;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
@@ -823,8 +842,8 @@ body {
 .pages-section-content {
   float: left;
   width: 500px;
-  min-height: 170px;
-  padding-top: 60px;
+  padding-top: 24px;
+  padding-bottom: 60px;
 }
 
 .btn-pages-active {
@@ -869,13 +888,4 @@ body {
   background: #eeeeee;
   border: 3px solid #eeeeee;
   border-radius: 2px;
-}
-
-.semi{
-  opacity: 0.12
-}
-
-.mask{
-  display
-  opacity: 0
 }
